@@ -46,6 +46,15 @@ public class Main {
 			zoos.add(currentZoo);
 		}
 
+		System.out.println("Before Sorting:");
+		zoos.get(0).printAnimalList();
+		
+		System.out.println();
+		zoos.get(0).sortAnimalsPerAge();
+
+		System.out.println("After Sorting:");
+		zoos.get(0).printAnimalList();
+		
 		// print the animal sound
 		for (Animal currentAnimal : zoos.get(0).getAnimalsList()) {
 			currentAnimal.makeNoise();

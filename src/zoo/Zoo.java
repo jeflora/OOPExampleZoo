@@ -1,6 +1,7 @@
 package zoo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import animals.Animal;
 
@@ -45,5 +46,17 @@ public class Zoo {
 
 	public String toString() {
 		return "Zoo: " + this.name;
+	}
+
+	public void printAnimalList() {
+		System.out.println("------------------------------");
+		for(Animal animal : this.animalsList) {
+			System.out.println(animal);
+		}
+		System.out.println("------------------------------");
+	}
+	
+	public void sortAnimalsPerAge() {
+		Collections.sort(this.animalsList);
 	}
 }
